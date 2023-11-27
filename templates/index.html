@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+    <title>Email/SMS Spam Classification</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Email/SMS Spam Classification</h1>
+        <form method="POST" action="/predict">
+            <label for="text">Enter text:</label>
+            <textarea name="text" rows="4" cols="50" required></textarea>
+            <button type="submit">Predict</button>
+        </form>
+        {% if prediction %}
+            <div class="result">
+                <p>Prediction: {{ prediction }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
