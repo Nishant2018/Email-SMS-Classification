@@ -7,7 +7,7 @@ Prerequisites
 You must have Scikit Learn,nltk==3.7
 flask==3.0.0
 scikit-learn==1.3.2
-and joblib==1.3.2 installed.
+and joblib==1.3.2 installed. 
 
 
 Project Structure
